@@ -5,7 +5,9 @@ body {
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #ddd;
+  background-image: url(img/gambarAbstrak.jpg);
+  background-size: auto;
+  background-repeat: repeat;
   line-height: 1.65;
   padding-bottom: 1000px;
 }
@@ -16,4 +18,16 @@ body {
   padding: 20px;
   box-sizing: border-box;
   display: flex;
+  background-image: url(img/field1.jpg);
+}
+.sidebar-satu {
+  width: 1000px;
+}
+.kolom-utama {
+  width: 3000px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.sidebar-dua {
+  width: 1000px;
 }
