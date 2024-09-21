@@ -101,3 +101,23 @@ if ($total > 100000) {
 echo "<br>";
 echo "<br>";
 echo "Jadi total yang harus dibayar setelah diskon sebesar $total";
+
+echo "<br>";
+echo "<br>";
+echo "Ada soal cerita : Seorang pemain game ingin menghitung total skor mereka dalam permainan. <br> 
+Mereka mendapatkan skor berdasarkan poin yang mereka kumpulkan. <br> 
+Jika mereka memiliki lebih dari 500 poin, maka mereka akan mendapatkan hadiah tambahan. <br>
+Buat tampilan baris pertama “Total skor pemain adalah: (poin)”. <br>
+Dan baris kedua “Apakah pemain mendapatkan hadiah tambahan? (YA/TIDAK)”";
+
+$poin = 520;
+
+echo "<br>";
+echo "<br>";
+echo "Total skor pemain adalah: $poin<br>";
+
+// Ternary
+$hadiah = ($poin > 500) ? "YA" : "TIDAK";
+
+echo "<br>";
+echo "Apakah pemain mendapatkan hadiah tambahan ? $hadiah";
