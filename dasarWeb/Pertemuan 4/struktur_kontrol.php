@@ -84,4 +84,20 @@ for ($i = 2; $i < count($nilaiMahasiswa) - 2; $i++) {
 }
 
 echo "<br>";
+echo "<br>";
 echo "Total nilai setelah mengabaikan dua nilai tertinggi dan dua nilai terendah adalah: $totalNilai";
+
+echo "<br>";
+echo "<br>";
+echo "Ada soal cerita : Seorang pelanggan ingin membeli sebuah produk dengan harga Rp 120.000. <br>
+Toko tersebut menawarkan diskon sebesar 20% untuk pembelian di atas Rp 100.000. <br>
+Bantu pelanggan ini untuk menghitung harga yang harus dibayar setelah mendapatkan diskon.";
+
+$total = 120000;
+$diskon = 0.2;
+if ($total > 100000) {
+    $total -= ($total * $diskon);
+}
+echo "<br>";
+echo "<br>";
+echo "Jadi total yang harus dibayar setelah diskon sebesar $total";
