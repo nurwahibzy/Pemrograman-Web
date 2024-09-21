@@ -48,3 +48,10 @@ echo "PenugasanKurang $a -= $b = " . ($a -= $b)." <br> ";
 echo "PenugasanKali $a *= $b = " . ($a *= $b) ." <br> ";
 echo "PenugasanBagi $a /= $b = " .( $a /= $b) ." <br> ";
 echo "PenugasanSisaBagi $a %= $b = " . ($a %= $b) ." <br> ";
+
+$hasilIdentik = $a === $b;
+$hasilTidakIdentik = $a !== $b;
+
+echo "<br>";
+echo "Hasil Identik $a === $b adalah $hasilIdentik <br>";
+echo "Hasil Tidak Identik $a !== $b adalah $hasilTidakIdentik <br>";
