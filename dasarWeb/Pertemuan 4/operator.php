@@ -41,3 +41,10 @@ echo "HasilAnd = $hasilAnd <br>";
 echo "hasilOr = $hasilOr <br>";
 echo "HasilNotA = $hasilNotA <br>";
 echo "HasilNotB = $hasilNotB <br>";
+
+echo "<br>";
+echo "PenugasanTambah $a += $b = " . ($a += $b) ." <br> ";
+echo "PenugasanKurang $a -= $b = " . ($a -= $b)." <br> ";
+echo "PenugasanKali $a *= $b = " . ($a *= $b) ." <br> ";
+echo "PenugasanBagi $a /= $b = " .( $a /= $b) ." <br> ";
+echo "PenugasanSisaBagi $a %= $b = " . ($a %= $b) ." <br> ";
