@@ -15,4 +15,19 @@ echo "Hasil Kali dari $a dan $b adalah $hasilKali <br>";
 echo "Hasil Bagi dari $a dan $b adalah $hasilBagi <br>";
 echo "Sisa bagi dari $a dan $b adalah $sisaBagi <br>";
 echo "Hasil pangkat dari $a pangkat $b adalah $pangkat <br>";
+
+$hasilSama = $a == $b;
+$hasilTidakSama = $a != $b;
+$hasilLebihKecil = $a < $b;
+$hasilLebihBesar = $a > $b;
+$hasilLebihKecilSama = $a <= $b;
+$hasilLebihBesarSama = $a >= $b;
+
+echo "<br>";
+echo "HasilSama = $hasilSama <br>";
+echo "hasilTidakSama = $hasilTidakSama <br>";
+echo "HasilLebihKecil = $hasilLebihKecil <br>";
+echo "HasilLebihBesar = $hasilLebihBesar <br>";
+echo "HasilLebihKecilSama = $hasilLebihKecilSama <br>";
+echo "HasilLebihBesarSama = $hasilLebihBesarSama <br>";
 ?>
