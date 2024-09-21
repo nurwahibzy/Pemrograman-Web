@@ -56,3 +56,32 @@ foreach ($nilaiSiswa as $nilai) {
     }
     echo "Nilai: $nilai (Lulus) <br>";
 }
+echo "<br>";
+echo "<br>";
+echo "Ada soal cerita : 
+Ada seorang guru ingin menghitung total nilai dari 10 siswa dalam ujian matematika.<br>
+Guru ini ingin mengabaikan dua nilai tertinggi dan dua nilai terendah. <br>
+Bantu guru ini menghitung total nilai yang akan digunakan untuk menentukan nilai rata-rata <br>
+setelah mengabaikan nilai tertinggi dan terendah. <br>
+Berikut daftar nilai dari 10 siswa (85, 92, 78, 64, 90, 75, 88, 79, 70, 96) <br>";
+
+$nilaiMahasiswa = [85, 92, 78, 64, 90, 75, 88, 79, 70, 96];
+
+// Sorting
+for ($i = 0; $i < count($nilaiMahasiswa) - 1; $i++) {
+    for ($j = 0; $j < count($nilaiMahasiswa) - $i - 1; $j++) {
+        if ($nilaiMahasiswa[$j] > $nilaiMahasiswa[$j + 1]) {
+            $temp = $nilaiMahasiswa[$j];
+            $nilaiMahasiswa[$j] = $nilaiMahasiswa[$j + 1];
+            $nilaiMahasiswa[$j + 1] = $temp;
+        }
+    }
+}
+
+$totalNilai = 0;
+for ($i = 2; $i < count($nilaiMahasiswa) - 2; $i++) {
+    $totalNilai += $nilaiMahasiswa[$i];
+}
+
+echo "<br>";
+echo "Total nilai setelah mengabaikan dua nilai tertinggi dan dua nilai terendah adalah: $totalNilai";
