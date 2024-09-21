@@ -55,3 +55,15 @@ $hasilTidakIdentik = $a !== $b;
 echo "<br>";
 echo "Hasil Identik $a === $b adalah $hasilIdentik <br>";
 echo "Hasil Tidak Identik $a !== $b adalah $hasilTidakIdentik <br>";
+
+echo "<br>";
+echo "Ada soal cerita : Sebuah restoran memiliki 45 kursi di dalamnya. <br>
+Pada suatu malam, 28 kursi telah ditempati oleh pelanggan. <br> 
+Berapa persen kursi yang masih kosong di restoran tersebut?";
+$jumlahKursi = 45;
+$kursiDitempati = 28;
+$kursiSisa = $jumlahKursi - $kursiDitempati;
+$prosentasiKursiKosong = ($kursiSisa / $jumlahKursi) * 100;
+echo "<br>";
+echo "<br>";
+echo "Persentasi kursi yang kosong adalah $prosentasiKursiKosong%";
