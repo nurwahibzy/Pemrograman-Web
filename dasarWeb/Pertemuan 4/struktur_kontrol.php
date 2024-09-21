@@ -31,7 +31,7 @@ $tanamanPerlahan = 5;
 $buahPerTanaman = 5;
 $jumlahBuah = 5;
 
-for ($i=1; $i <=$jumlahLahan; $i++) { 
+for ($i = 1; $i <= $jumlahLahan; $i++) {
     $jumlahBuah += ($tanamanPerlahan * $buahPerTanaman);
 }
 
@@ -42,6 +42,17 @@ echo "<br>";
 $skorUjian = [85, 92, 78, 96, 88];
 $totalSkor = 0;
 foreach ($skorUjian as $skor) {
-$totalSkor += $skor;
+    $totalSkor += $skor;
 }
 echo "Total skor ujian adalah: $totalSkor";
+
+echo "<br>";
+echo "<br>";
+$nilaiSiswa = [85, 92, 58, 64, 90, 55, 88, 79, 70, 96];
+foreach ($nilaiSiswa as $nilai) {
+    if ($nilai < 60) {
+        echo "Nilai: $nilai (Tidak lulus) <br>";
+        continue;
+    }
+    echo "Nilai: $nilai (Lulus) <br>";
+}
