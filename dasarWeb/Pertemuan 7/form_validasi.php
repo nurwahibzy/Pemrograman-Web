@@ -23,6 +23,9 @@
     <script>
         $(document).ready(function() {
             $("#myForm").submit(function(event) {
+                // menghentikan pengiriman form jika validasi gagal
+                event.preventDefault();
+
                 var nama = $("#nama").val();
                 var email = $("#email").val();
                 var valid = true;
@@ -42,8 +45,18 @@
                 }
 
                 if (!valid) {
-                    event.preventDefault();
-                    // menghentikan pengiriman form jika validasi gagal
+                    // Menggunakan AJAX untuk mengirim data ke server
+                    $.ajax({
+                        url: "proses_validasi.php",
+                        type: "POST",
+                        data: {
+                            nama: nama,
+                            email: email
+                        },
+                        success: function(response) {
+                            $("#response").html(response); // Menampilkan respons dari server
+                        }
+                    });
                 }
             });
         });
