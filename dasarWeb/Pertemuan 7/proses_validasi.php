@@ -16,6 +16,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $errors[] = "Format email tidak valid.";
     }
 
+     // Validasi Password
+     if (empty($password)) {
+        $errors[] = "Password harus diisi.";
+    } elseif (strlen($password) < 8) {
+        $errors[] = "Password harus minimal 8 karakter.";
+    }
+
     // Jika ada kesalahan validasi
     if (!empty($errors)) {
         foreach ($errors as $error) {
@@ -24,6 +31,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         // Lanjutkan dengan pemrosesan data jika semua validasi berhasil
         // Misalnya, menyimpan data ke database atau mengirim email
-        echo "Data berhasil dikirim: Nama = $nama, Email = $email";
+        echo "Data berhasil dikirim: Nama = $nama, Email = $email, Password = $password";
     }
 }
