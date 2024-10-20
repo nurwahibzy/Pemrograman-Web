@@ -8,8 +8,8 @@
 </head>
 
 <body>
-    <form action="upload_ajax.php" method="post">
-        <input type="file" name="File" id="file">
+    <form id="upload-form" action="upload_ajax.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" id="file">
         <input type="submit" name="submit" value="Unggah">
     </form>
     <div id="status"></div>
