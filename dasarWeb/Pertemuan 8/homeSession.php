@@ -9,6 +9,7 @@
 
 <body>
     <?PHP
+    session_start();
     if ($_SESSION['status'] == 'login') {
         # code...
         echo "Selamat datang " . $_SESSION['username'];
