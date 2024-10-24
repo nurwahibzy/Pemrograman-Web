@@ -1,0 +1,71 @@
+/* Styling untuk latar belakang dan teks */
+body {
+  background-color: darkkhaki;
+  font-family: Arial;
+  color: #333;
+  text-align: center;
+}
+
+/* Styling untuk header */
+h2 {
+  color: #333;
+  margin-top: 20px;
+  font-size: 24px;
+  
+}
+
+.table {
+    background-color: antiquewhite;
+  margin: 20px auto;
+  width: 80%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+/* Styling untuk header tabel */
+table tr:first-child {
+  background-color: #989417;
+  color: white;
+}
+
+/* Styling untuk baris tabel */
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Styling untuk tombol tambah data */
+a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #8b6f47;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+a:hover {
+  background-color: coral;
+}
+
+/* Styling untuk kontainer utama */
+.bodyDashboard {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 900px;
+  background-color: #eae7dc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,54 @@
+.bodyLogin {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  font-family: arial;
+}
+
+.form {
+  background-color: antiquewhite;
+  border-radius: 10px 10px 10px 10px;
+  padding: 20px;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.5);
+}
+
+img:hover {
+  transform: translateX(0px) translateY(-10px);
+}
+
+body h2 {
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  background-color: darkkhaki;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: calc(100% - 22px);
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  font-size: 13px;
+  display: inline-block;
+  background-color: #8b6f47;
+  /* Warna tombol serupa dengan tema dashboard */
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+  background-color: coral;
+}
